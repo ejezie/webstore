@@ -25,10 +25,10 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="hambuger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="hamburger">
+        <div className="one"></div>
+        <div className="two"></div>
+        <div className="three"></div>
       </div>
     </div>
   );
