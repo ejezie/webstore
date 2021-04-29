@@ -2,12 +2,13 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({show, toggle}) {
+
   return (
     <div className="navbar">
       <div className="navbar__logo">
         <h2>
-          SmartMobile<i class="fad fa-mobile"></i>
+          ShopMobile<i class="fad fa-mobile"></i>
         </h2>
       </div>
       <ul className="navbar__links">
@@ -17,7 +18,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/cart">
+          <Link to="/cart" className="link__wrap">
+            <div className="sign__in">Sign In</div>
             <div className="cart">
               <i class="fas fa-shopping-cart"></i>
               <span className="cartlogo__badge">0</span>

@@ -4,11 +4,18 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import Navbar from "./components/Navbar"
+import SideDrawer from "./components/SideDrawer"
+import { useState } from "react";
 
 function App() {
+  const [sideToggle, setSideToggle] = useState(true)
+
+  const toggleSideBar = () => setSideToggle(!sideToggle)
+
   return (
     <Router>
-      <Navbar/>
+      <Navbar show={sideToggle} toggle={toggleSideBar}/>
+      <SideDrawer show={sideToggle}/>
       <main>
         <Switch>
           <Route exact path="/" component={HomeScreen} />

@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1%;
+  padding: 2%;
   z-index: 10;
-  /* position: fixed; */
+  border-bottom: solid 0.2em black;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar__logo {
-  /* text-decoration: underline rgb(252, 90, 90); */
+  /* text-decoration: brown underline; */
 }
 
 .navbar__logo h2 {
@@ -32,7 +34,32 @@
   color: black;
 }
 
-.navbar__links > li > a:hover {
+.navbar__links > li > .link__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__links > li > .link__wrap > .sign__in {
+  margin-left: 8%;
+  min-width: 6em;
+  border: solid 0.2em black;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.navbar__links > li > .link__wrap > .sign__in:hover {
+  color: rgb(187, 80, 42);
+}
+
+.navbar__links > li > a > h3 {
+  font-size: 1.5em;
+}
+
+.navbar__links > li > a > .cart:hover {
+  color: rgb(187, 80, 42);
+}
+.navbar__links > li > a > h3:hover {
   color: rgb(187, 80, 42);
 }
 
@@ -64,7 +91,7 @@
 .hamburger {
   height: 30px;
   width: 40px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -88,3 +115,50 @@
   transform: rotate(40deg);
   margin: -1em 1em 0 0;
 } */
+
+@media (max-width: 1150px) {
+  .navbar {
+    padding: 5%;
+  }
+  .navbar__logo h2 {
+    font-size: 2em;
+  }
+
+  .navbar__logo > h2 > i {
+    font-size: 1.1em;
+    margin-left: 5px;
+  }
+  .navbar__links > li > a > .cart {
+    padding: 0.6em;
+  }
+  .navbar__links > li > .link__wrap > .sign__in {
+    padding: 1.7px;
+  }
+  .navbar__links > li > a > .cart > span {
+    font-size: 1.2em;
+    padding: 2px;
+  }
+  .navbar__links > li > a > .cart > i {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 750px) {
+  .hamburger{
+    display: flex;
+  }
+  .navbar__links{
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .navbar__logo h2 {
+    font-size: 1.1em;
+  }
+  .navbar__logo > h2 > i {
+    font-size: 1.2em;
+  }
+  .hamburger {
+    height: 20px;
+    width: 30px;
+  }
+}
