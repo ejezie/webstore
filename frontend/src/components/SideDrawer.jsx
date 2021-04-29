@@ -10,7 +10,6 @@ function SideDrawer({ show }) {
     }
 
   return (
-    { show } && (
       <div className={sideClass.join(" ")}>
         <Link>
           <div className="sign-in">Sign In</div>
@@ -31,7 +30,6 @@ function SideDrawer({ show }) {
           </li>
         </ul>
       </div>
-    )
   );
 }
 

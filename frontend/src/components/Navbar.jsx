@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-function Navbar({show, toggle}) {
+function Navbar({ toggle }) {
 
   return (
     <div className="navbar">
@@ -27,7 +27,7 @@ function Navbar({show, toggle}) {
           </Link>
         </li>
       </ul>
-      <div className="hamburger">
+      <div className="hamburger" onClick={toggle}>
         <div className="one"></div>
         <div className="two"></div>
         <div className="three"></div>
