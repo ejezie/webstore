@@ -1,0 +1,7 @@
+.screenproducts {
+  padding: 5%;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
