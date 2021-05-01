@@ -1,11 +1,7 @@
-import "./Backdrop.css"
+import "./Backdrop.css";
 
-function Backdrop({toggle}) {
-    return (
-        <div className="backdrop" onClick={toggle}>
-            
-        </div>
-    )
+function Backdrop({ show, toggle, togglefalse }) {
+  return { show } && <div className="backdrop" onClick={togglefalse}></div>;
 }
 
-export default Backdrop
+export default Backdrop;

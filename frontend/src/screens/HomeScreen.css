@@ -1,0 +1,21 @@
+.homescreen {
+  display: flex;
+  width: 100vw;
+  padding: 4%;
+}
+
+.homescreen > img {
+  width: 45vw;
+  height: 45vh;
+  object-fit: contain;
+}
+.img__back {
+  width: 45vw;
+  height: 45vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: -3% -15% 0 0;
+}
+.home__text {
+  display: flex;
+  flex-direction: column;
+}
