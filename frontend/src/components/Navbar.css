@@ -2,9 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2%;
+  padding: 4%;
   z-index: 10;
-  border-bottom: solid 0.2em black;
   /* position: fixed; */
   width: 100%;
 }
@@ -39,8 +38,12 @@
   align-items: center;
   justify-content: space-between;
 }
+.navbar__links > li > .link__wrap > a{
+  text-decoration: none;
+  color: black;
+}
 
-.navbar__links > li > .link__wrap > .sign__in {
+.navbar__links > li > .link__wrap > a > .sign__in {
   margin-left: 8%;
   min-width: 6em;
   border: solid 0.2em black;
@@ -48,7 +51,7 @@
   padding: 2px;
 }
 
-.navbar__links > li > .link__wrap > .sign__in:hover {
+.navbar__links > li > .link__wrap > a > .sign__in:hover {
   color: rgb(187, 80, 42);
 }
 
@@ -57,7 +60,7 @@
 }
 
 .navbar__links > li > a > .cart:hover {
-  color: rgb(187, 80, 42);
+  color: rgb(141, 68, 41);
 }
 .navbar__links > li > a > h3:hover {
   color: rgb(187, 80, 42);

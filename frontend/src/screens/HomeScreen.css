@@ -27,5 +27,16 @@
   height: 6em;
   width: 10em;
   margin: 3% 2% 0 0;
-  box-shadow: -0.3em -0.3em 0.3em black
+  box-shadow: -0.2em -0.2em 0.4em black;
+}
+.home__text > a > button {
+  padding: 2%;
+  width: 30%;
+  margin-top: 6%;
+  background-color: rgb(71, 28, 28);
+  box-shadow: -0.1em -0.1em 0.5em black;
+  cursor: pointer;
+  border-radius: 2em;
+  color: bisque;
+  /* rgb(255, 240, 194, 0.7) */
 }

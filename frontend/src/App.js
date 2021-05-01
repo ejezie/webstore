@@ -4,9 +4,9 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import ScreenProducts from "./screens/ScreenProducts";
 import CartScreen from "./screens/CartScreen";
+import SignScreen from "./screens/SignScreen";
 import Navbar from "./components/Navbar";
 import SideDrawer from "./components/SideDrawer";
-import Backdrop from "./components/Backdrop";
 import { useState } from "react";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           <Route exact path="/products" component={ScreenProducts}/>
           <Route exact path="/product/id" component={ProductScreen} />
           <Route exact path="/cart" component={CartScreen} />
+          <Route exact path="/sign" component={SignScreen} />
         </Switch>
       </main>
     </Router>

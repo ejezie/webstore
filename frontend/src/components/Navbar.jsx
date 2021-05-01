@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar({ toggle }) {
-
   return (
     <div className="navbar">
       <div className="navbar__logo">
@@ -19,7 +18,9 @@ function Navbar({ toggle }) {
         </li>
         <li>
           <Link to="/cart" className="link__wrap">
-            <div className="sign__in">Sign In</div>
+            <Link to="/sign">
+              <div className="sign__in">Sign In</div>
+            </Link>
             <div className="cart">
               <i class="fas fa-shopping-cart"></i>
               <span className="cartlogo__badge">0</span>
