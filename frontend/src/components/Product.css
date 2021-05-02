@@ -1,4 +1,30 @@
 .product {
-  border: solid 0.1em black;
-  padding: 2%;
+  /* border: solid 0.1em black; */
+  padding: 10%;
+  background-color: white;
+  box-shadow: -0.3em -0.3em 0.5em black;
+  margin-top: 5%;
+}
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+.product__info > .info__name {
+  margin-top: 2%;
+}
+.product__info > .info__description {
+  margin-top: 2%;
+  /* max-width: 10em; */
+  overflow: hidden;
+}
+.product__info > .info__price {
+  margin-top: 2%;
+  font-weight: bolder;
+}
+.product__info > .info__button {
+  margin-top: 2%;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: royalblue;
+  text-align: center;
 }
