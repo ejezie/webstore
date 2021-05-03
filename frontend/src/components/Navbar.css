@@ -124,25 +124,28 @@
     padding: 5%;
   }
   .navbar__logo h2 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   .navbar__logo > h2 > i {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-left: 5px;
   }
   .navbar__links > li > a > .cart {
-    padding: 0.6em;
+    padding: 0.5em;
   }
   .navbar__links > li > .link__wrap > .sign__in {
-    padding: 1.7px;
+    padding: 0.1px;
   }
   .navbar__links > li > a > .cart > span {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 2px;
   }
   .navbar__links > li > a > .cart > i {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+  .navbar__links > li > a > h3 {
+    font-size: 1em;
   }
 }
 @media (max-width: 750px) {

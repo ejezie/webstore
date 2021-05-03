@@ -14,14 +14,14 @@ function ScreenProducts() {
         </div>
       </div>
       <div className="products">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
+        <Product className="product__item"/>
       </div>
       <Footer/>
     </div>

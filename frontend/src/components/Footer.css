@@ -19,10 +19,23 @@
 .navbar__log h2 {
   font-size: 2.3em;
 }
-
 .navbar__log > h2 > i {
   font-size: 1.3em;
   margin-left: 5px;
 }
 .navbar__log {
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 2em;
+  width: 14em;
+  border-radius: 15em;
+}
+.search input {
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0, 0.5);
 }

@@ -1,13 +1,16 @@
 .homescreen {
   display: flex;
-  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
   padding: 5%;
+  height: 100%;
+  width: 100%;
 }
 
-.homescreen > img {
-  width: 40vw;
-  height: 55vh;
-  object-fit: contain;
+.homescreen img {
+  width: 40em;
+  height: 35em;
+  object-fit: cover;
   border-radius: 50% 4% 1% 1%;
   box-shadow: -0.3em -0.3em 0.5em black;
 }
@@ -15,7 +18,7 @@
   display: flex;
   flex-direction: column;
 }
-.home__text > p {
+.home__text p {
   margin-bottom: 6%;
   max-width: 90%;
 }
@@ -23,14 +26,14 @@
   display: flex;
   align-items: center;
 }
-.home__text > .logos > img {
+.home__text > .logos img {
   height: 4em;
   width: 9.5em;
   margin: 3% 2% 0 0;
   box-shadow: -0.2em -0.2em 0.4em black;
   border-radius: 4px;
 }
-.home__text > a > button {
+.home__text > a button {
   padding: 2%;
   width: 30%;
   margin-top: 6%;
@@ -41,3 +44,209 @@
   color: bisque;
   /* rgb(255, 240, 194, 0.7) */
 }
+
+@media (max-width: 1200px) {
+  .homescreen {
+    /* flex-direction: column-reverse; */
+    /* overflow: hidden; */
+  }
+  .homescreen img {
+    width: 25em;
+    height: 20em;
+    object-fit: cover;
+  }
+  .home__text p {
+    font-size: small;
+  }
+  .home__text > .logos img {
+    height: 2em;
+    width: 4.5em;
+    object-fit: cover;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 40%;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 950px) {
+  .homescreen {
+    /* flex-direction: column-reverse; */
+    /* overflow: hidden; */
+  }
+  .homescreen img {
+    width: 20em;
+    height: 18em;
+  }
+  .home__text p {
+    font-size: 0.8em;
+  }
+  .home__text > .logos img {
+    height: 2em;
+    width: 4.2em;
+    object-fit: cover;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 40%;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    font-weight: bolder;
+  }
+}
+@media (max-width: 900px) {
+  .homescreen {
+    flex-direction: column-reverse;
+  }
+  .homescreen img {
+    width: 39em;
+    height: 23em;
+  }
+  .home__text p {
+    font-size: 0.9em;
+    margin-top: 20px;
+    /* text-align: center; */
+  }
+  .home__text {
+    margin-left: 5em;
+  }
+  .home__text > .logos img {
+    height: 2em;
+    width: 4.2em;
+    object-fit: cover;
+    place-self: center;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 40%;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 0.9em;
+    /* margin-bottom: 4px; */
+    font-weight: bolder;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 750px) {
+  .homescreen img {
+    width: 30em;
+    height: 18em;
+  }
+
+}
+@media (max-width: 655px) {
+  .homescreen img {
+    width: 26em;
+    height: 15em;
+  }
+  .home__text p {
+    font-size: 0.7em;
+    margin-top: 20px;
+    /* text-align: center; */
+  }
+  .home__text {
+    margin-left: 4.5em;
+  }
+  .home__text > .logos img {
+    height: 2em;
+    width: 3.8em;
+    object-fit: cover;
+    place-self: center;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 40%;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 0.9em;
+    /* margin-bottom: 4px; */
+    font-weight: bolder;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 600px) {
+  .homescreen img {
+    width: 23em;
+    height: 15em;
+  }
+  .home__text > .logos img {
+    height: 1.6em;
+    width: 3em;
+    object-fit: cover;
+    place-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .homescreen img {
+    width: 18em;
+    height: 13em;
+  }
+  .home__text > .logos img {
+    height: 1.6em;
+    width: 2.5em;
+    object-fit: cover;
+    place-self: center;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 50%;
+  }
+  .home__text p {
+    font-size: 0.6em;
+  }
+}
+@media (max-width: 435px) {
+  .homescreen img {
+    width: 17em;
+    height: 12em;
+  }
+  .home__text > .logos img {
+    height: 1.6em;
+    width: 2.5em;
+    object-fit: cover;
+    place-self: center;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 50%;
+  }
+  .home__text p {
+    font-size: 0.6em;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 0.8em;
+  }
+  .home__text {
+    margin-left: 3em;
+  }
+}
+@media (max-width: 360px) {
+  .homescreen img {
+    width: 16em;
+    height: 12em;
+  }
+  .home__text > .logos img {
+    height: 1.6em;
+    width: 2.5em;
+    object-fit: cover;
+    place-self: center;
+  }
+  .home__text > a button {
+    padding: 2%;
+    min-width: 60%;
+  }
+  .home__text p {
+    font-size: 0.6em;
+  }
+  .homescreen > .home__text h1 {
+    font-size: 0.8em;
+  }
+  .home__text {
+    margin-left: 2em;
+  }
+}
+

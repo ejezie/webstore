@@ -5,6 +5,11 @@
   box-shadow: -0.3em -0.3em 0.5em black;
   margin-top: 5%;
 }
+/* .product > img{
+  width: 18em;
+  height: 12em;
+  object-fit: contain;
+} */
 .product__info {
   display: flex;
   flex-direction: column;

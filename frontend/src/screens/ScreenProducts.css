@@ -1,7 +1,28 @@
 .screenproducts {
   padding: 5%;
+  /* width: 300px; */
+  /* height: 300px; */
 }
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.head__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head__search > .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 2em;
+  width: 14em;
+  border-radius: 15em;
+}
+.head__search > .search input {
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0, 0.5);
 }

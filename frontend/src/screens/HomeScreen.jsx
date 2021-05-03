@@ -33,10 +33,6 @@ function HomeScreen() {
         <Link to="/products">
           <button>View Products</button>
         </Link>
-        {/* <div className="search">
-          <input type="text" placeholder="search product"/>
-          <i class="fas fa-search"></i>
-        </div> */}
       </div>
       <img src={phone} alt="picture" />
     </div>
