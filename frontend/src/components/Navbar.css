@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 4%;
   z-index: 10;
-  /* position: fixed; */
   width: 100%;
+  background: linear-gradient(To bottom, rgb(255, 255, 255, 0.9), rgb(255, 240, 194));
 }
 
 .navbar__logo {
@@ -38,7 +38,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.navbar__links > li > .link__wrap > a{
+.navbar__links > li > .link__wrap > a {
   text-decoration: none;
   color: black;
 }
@@ -149,10 +149,10 @@
   }
 }
 @media (max-width: 750px) {
-  .hamburger{
+  .hamburger {
     display: flex;
   }
-  .navbar__links{
+  .navbar__links {
     display: none;
   }
 }

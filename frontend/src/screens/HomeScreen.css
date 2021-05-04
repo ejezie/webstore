@@ -101,6 +101,8 @@
 @media (max-width: 900px) {
   .homescreen {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .homescreen img {
     width: 39em;
