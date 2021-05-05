@@ -1,0 +1,46 @@
+.cartitem {
+  width: 100%;
+  padding: 2%;
+  margin: 8px 0 8px 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  gap: 8px;
+  background: white;
+  box-shadow: -0.3em -0.3em 0.5em black;
+  place-items: center;
+}
+.cartitem img {
+  width: 5em;
+}
+.cartitem__name{
+    text-decoration: none;
+    color: black;
+}
+.cart__select{
+    border: none;
+    background-color: royalblue;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+.cart__select:hover{
+    background-color: rgb(65, 105, 225, 0.7);
+}
+.price{
+    font-weight: bolder;
+}
+.delete{
+    font-size: 2em;
+    color: red;
+    background-color: white;
+    border: none;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+}
+.delete:hover{
+    transform: scale(1.15);
+    background-color: wheat;
+}

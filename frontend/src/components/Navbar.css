@@ -46,7 +46,7 @@
 .navbar__links > li > .link__wrap > a > .sign__in {
   margin-left: 8%;
   min-width: 6em;
-  border: solid 0.2em black;
+  /* border: solid 0.2em black; */
   border-radius: 5px;
   padding: 2px;
 }
