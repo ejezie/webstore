@@ -1,7 +1,7 @@
 .cartitem {
   width: 100%;
   padding: 2%;
-  margin: 8px 0 8px 0;
+  margin: 8px 0 12px 0;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
   gap: 8px;
@@ -12,35 +12,99 @@
 .cartitem img {
   width: 5em;
 }
-.cartitem__name{
-    text-decoration: none;
-    color: black;
+.cartitem__name {
+  text-decoration: none;
+  color: black;
 }
-.cart__select{
-    border: none;
-    background-color: royalblue;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
+.cart__select {
+  border: none;
+  background-color: royalblue;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
 }
-.cart__select:hover{
-    background-color: rgb(65, 105, 225, 0.7);
+.cart__select:hover {
+  background-color: rgb(65, 105, 225, 0.7);
 }
-.price{
-    font-weight: bolder;
+.price {
+  font-weight: bolder;
 }
-.delete{
-    font-size: 2em;
-    color: red;
-    background-color: white;
-    border: none;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-    padding: 3px;
-    border-radius: 5px;
+.delete {
+  font-size: 2em;
+  color: red;
+  background-color: white;
+  border: none;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
 }
-.delete:hover{
-    transform: scale(1.15);
-    background-color: wheat;
+.delete:hover {
+  transform: scale(1.15);
+  background-color: wheat;
 }
+
+@media (max-width: 1320px) {
+  .cartitem {
+    max-width: 500px;
+  }
+}
+@media (max-width: 905px) {
+  .cartitem {
+    max-width: 400px;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .delete{
+      font-size: 1.5em;
+  }
+}
+@media (max-width: 690px) {
+  .cartitem {
+    max-width: 330px;
+  }
+  p {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 565px) {
+  .cartitem {
+    max-width: 300px;
+  }
+  p {
+    font-size: 0.6em;
+  }
+  .cartitem img {
+    width: 4em;
+  }
+}
+@media (max-width: 520px) {
+  .cartitem {
+    max-width: 400px;
+  }
+  p {
+    font-size: 0.6em;
+  }
+  .cartitem img {
+    width: 4em;
+  }
+}
+@media (max-width:335px) {
+    .cartitem {
+        max-width: 280px;
+      }
+      p {
+        font-size: 0.5em;
+      }
+      .cart__select {
+        padding: 1px;
+      }
+      .delete{
+        font-size: 1.2em;
+    }
+    .cartitem img {
+        width: 3.3em;
+      }
+} 

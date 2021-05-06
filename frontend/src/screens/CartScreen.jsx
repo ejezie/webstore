@@ -12,7 +12,7 @@ function CartScreen() {
           <CartItem/>
         </div>
         <div className="cart__right">
-          <div className="cartscreen__info">
+          <div className="cart__info">
             <p>Subtotal (0) items</p>
             <p>$200.00</p>
           </div>
