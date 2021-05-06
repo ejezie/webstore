@@ -77,18 +77,15 @@
     font-size: 0.6em;
   }
   .cartitem img {
-    width: 4em;
+    width: 3em;
   }
 }
 @media (max-width: 520px) {
   .cartitem {
-    max-width: 400px;
+    max-width: 350px;
   }
   p {
     font-size: 0.6em;
-  }
-  .cartitem img {
-    width: 4em;
   }
 }
 @media (max-width:335px) {
