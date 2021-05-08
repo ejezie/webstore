@@ -7,6 +7,7 @@ import CartScreen from "./screens/CartScreen";
 import SignScreen from "./screens/SignScreen";
 import Navbar from "./components/Navbar";
 import SideDrawer from "./components/SideDrawer";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 
@@ -14,7 +15,7 @@ function App() {
   const [sideToggle, setSideToggle] = useState(false);
 
   const toggleSideBar = () => setSideToggle(!sideToggle);
-  const toggleFalse = () => setSideToggle();
+  // const toggleFalse = () => setSideToggle();
 
   return (
     <Router>
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/sign" component={SignScreen} />
         </Switch>
       </main>
+      <Footer/>
     </Router>
   );
 }

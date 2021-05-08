@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProductScreen.css";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 function ProductScreen() {
   return (
@@ -45,7 +45,6 @@ function ProductScreen() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

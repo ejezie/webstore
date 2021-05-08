@@ -10,7 +10,7 @@ function Footer() {
         </h2>
       </div>
       <div className="foot__icons">
-        <p>contact us</p>
+        <p>contact</p>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-square"></i>
@@ -18,7 +18,7 @@ function Footer() {
         <i class="fad fa-mobile"></i>
       </div>
       <div className="search">
-        <input type="text" placeholder="search product" />
+        <input type="text" placeholder="search" />
         <i class="fas fa-search"></i>
       </div>
     </div>

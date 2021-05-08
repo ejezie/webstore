@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartScreen.css";
 import CartItem from "../components/CartItem"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 
 function CartScreen() {
   return (
@@ -21,7 +21,6 @@ function CartScreen() {
         </div>
         </div> 
       </div>
-      <Footer/>
     </div>
   );
 }

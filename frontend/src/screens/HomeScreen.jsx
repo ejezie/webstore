@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeScreen.css";
 import { Link } from "react-router-dom";
-import smp from "../images/smp.jpg";
+// import smp from "../images/smp.jpg";
 import phone from "../images/phone.jpg";
 import samsung from "../images/samsung.png";
 import nokia from "../images/nokia.png";
@@ -34,7 +34,7 @@ function HomeScreen() {
           <button>View Products</button>
         </Link>
       </div>
-      <img src={phone} alt="picture" />
+      <img src={phone} alt="phone" />
     </div>
   );
 }
