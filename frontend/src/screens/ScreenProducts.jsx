@@ -10,7 +10,7 @@ function ScreenProducts() {
   const dispatch = useDispatch();
 
   const getProducts = useSelector((state) => state.getProducts);
-  const { loading, error, products } = getProducts;
+  const {products, loading, error,} = getProducts;
 
   useEffect(() => {
     dispatch(listProducts());

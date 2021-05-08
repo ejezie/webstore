@@ -5,11 +5,12 @@ export const getProductsReducer = (state = { products: [] }, action) => {
     case actionTypes.GET_PRODUCTS_REQUEST:
       return {
         loading: true,
+        products: [],
       };
     case actionTypes.GET_PRODUCTS_SUCCESS:
       return {
         loading: false,
-        payload: action.payload,
+        products: action.payload,
       };
     case actionTypes.GET_PRODUCTS_FAIL:
       return {
@@ -30,7 +31,7 @@ export const getProductDetailsReducer = (state = { products: {} }, action) => {
     case actionTypes.GET_PRODUCT_DETAIL_SUCCESS:
       return {
         loading: false,
-        payload: action.payload,
+        products: action.payload,
       };
     case actionTypes.GET_PRODUCT_DETAIL_FAIL:
       return {
