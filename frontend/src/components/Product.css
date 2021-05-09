@@ -18,6 +18,7 @@
 }
 .product__info > .info__name {
   margin-top: 2%;
+  font-weight: bolder;
 }
 .product__info > .info__description {
   margin-top: 2%;
