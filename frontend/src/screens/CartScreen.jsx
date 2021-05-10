@@ -10,7 +10,7 @@ function CartScreen() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
   const qtyChangeHandler = (id, qty) => {
-    addToCart(id, qty);
+    dispatch(addToCart(id, qty));
   };
 
   return (
