@@ -3,11 +3,16 @@ import "./CartScreen.css";
 import CartItem from "../components/CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { addToCart } from "../redux/actions/cartActions";
 
 function CartScreen() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  const qtyChangeHandler = (id, qty) => {
+    addToCart(id, qty);
+  };
+
   return (
     <div>
       <div className="cartscreen">
@@ -21,7 +26,9 @@ function CartScreen() {
             </div>
           ) : (
             cartItems.map((cart) => {
-              return <CartItem item={cart} />;
+              return (
+                <CartItem item={cart} qtyChangeHandler={qtyChangeHandler} />
+              );
             })
           )}
         </div>

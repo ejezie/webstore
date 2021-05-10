@@ -6,6 +6,9 @@
 .cart__left {
   flex: 0.7;
 }
+.cart__left div {
+  /* margin-bottom: 0.5em; */
+}
 .cart__right {
   display: flex;
   align-items: center;
@@ -66,6 +69,10 @@
     padding: 2px;
     font-size: 0.5em;
     width: 100%;
+  }
+  .cart__left div {
+    margin-bottom: 1.5em;
+    font-size: small;
   }
   .cart__right {
     min-width: 300px;
