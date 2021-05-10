@@ -2,19 +2,16 @@ import React from "react";
 import "./CartItem.css";
 import { Link } from "react-router-dom";
 
-function CartItem() {
+function CartItem({ item }) {
   return (
     <div className="cartitem">
       <div className="img">
-        <img
-          src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/43/108127/1.jpg?9872"
-          alt="product"
-        />
+        <img src={item.imageUrl} alt={item.name} />
       </div>
-      <Link to={`/product/${111}`} className="cartitem__name">
+      <Link to={`/product/${item.product}`} className="cartitem__name">
         <p>Product 1</p>
       </Link>
-      <p className="price">$200.00</p>
+      <p className="price">${item.price}</p>
       <select className="cart__select" id="">
         <option value="1">1</option>
         <option value="2">2</option>

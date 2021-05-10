@@ -19,6 +19,11 @@ function ProductScreen({ match, history }) {
     }
   }, [product, match, dispatch]);
 
+  const addToCartHandler = () => {
+    dispatch(addToCart(product._id, qty))
+    history.push("/cart")
+  }
+
   const override = `
    margin: 10em 0 0 42em ;
    @media (max-width:1000px) {
@@ -54,9 +59,7 @@ function ProductScreen({ match, history }) {
               <div className="left__info">
                 <p className="left__name">{product.name}</p>
                 <p>${product.price}</p>
-                <p>
-                  {product.description}
-                </p>
+                <p>{product.description}</p>
               </div>
             </div>
             <div className="right">
@@ -65,19 +68,25 @@ function ProductScreen({ match, history }) {
                   Price: <span>${product.price}</span>
                 </p>
                 <p>
-                  Status: <span>{product.numInStock > 0 ? "In Stock" : "Out of Stock"}</span>
+                  Status:{" "}
+                  <span>
+                    {product.numInStock > 0 ? "In Stock" : "Out of Stock"}
+                  </span>
                 </p>
                 <p>
                   Qty
-                  <select name="" id="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                  <select value={qty} onChange={(e) => setQty(e.target.value)}>
+                    {[...Array(product.numInStock).keys()].map((x) => {
+                      return (
+                        <option key={x + 1} value={x + 1}>
+                          {x + 1}
+                        </option>
+                      );
+                    })}
                   </select>
                 </p>
                 <p>
-                  <button type="button">Add To Cart</button>
+                  <button type="button" onClick={addToCartHandler}>Add To Cart</button>
                 </p>
               </div>
             </div>
