@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  place-self: center;
   padding: 10%;
   background-color: white;
   box-shadow: -0.3em -0.3em 0.5em black;
@@ -23,6 +25,7 @@
 .product__info > .info__description {
   margin-top: 2%;
   overflow: hidden;
+  min-height: 7em;
 }
 .product__info > .info__price {
   margin-top: 2%;
@@ -127,7 +130,7 @@
 }
 @media (max-width: 395px) {
   .product {
-    width: 320px;
+    width: 280px;
     height: 350px;
   }
   .product > img {
