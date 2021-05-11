@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./CartItem.css";
 import { Link } from "react-router-dom";
 
-function CartItem({ item, qtyChangeHandler }) {
-  const [qty, setQty] = useState(1);
+function CartItem({ item, qtyChangeHandler, remove }) {
+  // const [qty, setQty] = useState(1);
   console.log(item.numInStock);
   return (
     <div className="cartitem">
@@ -25,7 +25,7 @@ function CartItem({ item, qtyChangeHandler }) {
         ))}
       </select>
 
-      <button className="delete">
+      <button className="delete" onClick={()=> (remove(item.product))}>
         <i class="fal fa-trash"></i>
       </button>
     </div>

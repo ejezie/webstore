@@ -3,7 +3,7 @@ import "./CartScreen.css";
 import CartItem from "../components/CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../redux/actions/cartActions";
+import { addToCart, removeFromCart } from "../redux/actions/cartActions";
 
 function CartScreen() {
   const dispatch = useDispatch();
@@ -12,6 +12,13 @@ function CartScreen() {
   const qtyChangeHandler = (id, qty) => {
     dispatch(addToCart(id, qty));
   };
+  const removeHandler = (id) => {
+    dispatch(removeFromCart(id))
+  }
+  const getCartCount = () => (
+    cartItems.reduce((qty, item)=> parseInt(item.qty) + qty, 0)
+  )
+  
 
   return (
     <div>
@@ -27,14 +34,14 @@ function CartScreen() {
           ) : (
             cartItems.map((cart) => {
               return (
-                <CartItem item={cart} qtyChangeHandler={qtyChangeHandler} />
+                <CartItem item={cart} qtyChangeHandler={qtyChangeHandler} remove={removeHandler} />
               );
             })
           )}
         </div>
         <div className="cart__right">
           <div className="cart__info">
-            <p>Subtotal (0) items</p>
+            <p>Subtotal ({getCartCount()}) items</p>
             <p>$200.00</p>
           </div>
           <div>

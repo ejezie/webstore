@@ -1,8 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Navbar({ toggle }) {
+  const [clicked, setClicked] = useState(false)
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
+
+  const getCartCount = () =>
+    cartItems.reduce((qty, item) => parseInt(item.qty) + qty, 0);
+  const onem = [""];
+  const twom = [""];
+  const threem = [""];
+  const cancelSymbol = () => {
+    if(clicked){
+      setClicked(true)
+      onem.push("one");
+      twom.push("two");
+      threem.push("three");
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar__logo">
@@ -23,15 +42,18 @@ function Navbar({ toggle }) {
             </Link>
             <div className="cart">
               <i class="fas fa-shopping-cart"></i>
-              <span className="cartlogo__badge">0</span>
+              <span className="cartlogo__badge">{getCartCount()}</span>
             </div>
           </Link>
         </li>
       </ul>
-      <div className="hamburger" onClick={toggle}>
-        <div className="one"></div>
-        <div className="two"></div>
-        <div className="three"></div>
+      <div
+        className="hamburger"
+        onClick={cancelSymbol()}
+        onClick={toggle} >
+        <div className={onem.join(" ")}></div>
+        <div className={twom.join(" ")}></div>
+        <div className={threem.join(" ")}></div>
       </div>
     </div>
   );
