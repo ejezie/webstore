@@ -18,6 +18,9 @@ function CartScreen() {
   const getCartCount = () => (
     cartItems.reduce((qty, item)=> parseInt(item.qty) + qty, 0)
   )
+  const getCartTotal = ()=>(
+    cartItems.reduce((price, item)=> parseFloat(item.price * item.qty) + price, 0)
+  )
   
 
   return (
@@ -42,7 +45,7 @@ function CartScreen() {
         <div className="cart__right">
           <div className="cart__info">
             <p>Subtotal ({getCartCount()}) items</p>
-            <p>$200.00</p>
+            <p>${getCartTotal().toFixed(2)}</p>
           </div>
           <div>
             <button>Proceed To Checkout</button>
